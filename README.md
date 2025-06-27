@@ -1,0 +1,1 @@
+# dotnet-screaming-architecture-skeleton
