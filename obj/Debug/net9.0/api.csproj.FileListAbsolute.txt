@@ -121,3 +121,4 @@ C:\Users\Ahmet Asaad Hammoud\Desktop\ClassRoom\net\api\bin\Debug\net9.0\Microsof
 C:\Users\Ahmet Asaad Hammoud\Desktop\ClassRoom\net\api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Ahmet Asaad Hammoud\Desktop\ClassRoom\net\api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Ahmet Asaad Hammoud\Desktop\ClassRoom\net\api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ahmet Asaad Hammoud\Desktop\ClassRoom\net\api\obj\Debug\net9.0\api.sourcelink.json

@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
+using Api.Features.Login.Model;
 using Api.Features.Register.DTO;
 using Api.Infrastructure.Enums;
 using Api.Utils;
@@ -69,6 +70,7 @@ public class User
 
 
 
+
     // Factory method
     public static User Create(RegisterRequest request)
     {
@@ -90,6 +92,9 @@ public class User
             LastLogin = DateTime.UtcNow
         };
     }
+
+
+    public ICollection<LoginAttempt> LoginAttempts { get; set; } = new List<LoginAttempt>();
 
     // Update methods
     public void UpdateLastLogin(string? ipAddress)

@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  mysql_db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: yourRootPassword
+      MYSQL_DATABASE: yourdb
+      MYSQL_USER: youruser
+      MYSQL_PASSWORD: yourpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - my_network
+
+  classroom_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: classroom_api
+    depends_on:
+      - mysql_db
+    ports:
+      - "5000:5000"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "server=mysql_db;port=3306;database=yourdb;user=youruser;password=yourpassword"
+    volumes:
+      - data_protection:/root/.aspnet/DataProtection-Keys
+    networks:
+      - my_network
+
+volumes:
+  mysql_data:
+  data_protection:
+
+networks:
+  my_network:
+    driver: bridge

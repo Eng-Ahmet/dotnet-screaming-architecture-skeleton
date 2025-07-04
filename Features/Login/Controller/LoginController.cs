@@ -2,6 +2,7 @@ namespace Features.Login.Controller;
 
 using System.Threading.Tasks;
 using Api.Features.Register.Model;
+using Api.Infrastructure.ErrorHandling;
 using Api.Infrastructure.Responses;
 using Features.Login.DTO;
 using Features.Login.Service;
@@ -33,7 +34,9 @@ public class LoginController : ControllerBase
 
         try
         {
-            User user = await _loginService.LoginAsync(request);
+            string ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
+
+            User user = await _loginService.LoginAsync(request, ipAddress);
 
             var response = SuccessResponse<object>.FromResult(HttpContext, new
             {
@@ -41,15 +44,17 @@ public class LoginController : ControllerBase
                 Message = "Login successful"
             },
             "Login successful", 200);
+
             return Ok(response);
         }
         catch (UnauthorizedAccessException ex)
         {
-            throw new UnauthorizedAccessException(ex.Message, ex);
+            return Unauthorized(ErrorResponse.FromException(HttpContext, ex));
         }
         catch (Exception ex)
         {
-            throw new Exception("An unexpected error occurred during login.", ex);
+            return StatusCode(500, ErrorResponse.FromException(HttpContext, ex));
         }
     }
+
 }

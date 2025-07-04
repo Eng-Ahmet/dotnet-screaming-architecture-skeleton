@@ -1,4 +1,5 @@
 
+using Api.Features.Login.Repository;
 using Api.Features.Register.Repository;
 using Api.Features.Register.Service;
 using Api.Infrastructure;
@@ -21,9 +22,24 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         // Configure MySQL database connection
-        var connectionString = _config.GetConnectionString("MySQL");
+        var connectionString = _config.GetConnectionString("DefaultConnection");
+        if (string.IsNullOrEmpty(connectionString))
+        {
+            throw new InvalidOperationException("Connection string 'DefaultConnection' is not configured.");
+        }
+
         services.AddDbContextPool<AppDbContext>(options =>
-            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 34)),
+            mySqlOptions =>
+            {
+                mySqlOptions.EnableRetryOnFailure(
+                    maxRetryCount: 5,
+                    maxRetryDelay: TimeSpan.FromSeconds(30),
+                    errorNumbersToAdd: null);
+            })
+        );
+
+
 
         // Cross-Origin Resource Sharing (CORS) configuration
         services.AddCors(options =>
@@ -53,6 +69,8 @@ public class Startup
 
         // Register services
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ILoginAttemptRepository, LoginAttemptRepository>();
+
         services.AddScoped<RegisterService>();
         services.AddScoped<LoginService>();
 

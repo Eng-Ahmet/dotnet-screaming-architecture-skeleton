@@ -1,0 +1,113 @@
+2025-07-04 13:03:34.043 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:03:34.335 +02:00 [INF] ✅ Application is running at: http://localhost:5243
+2025-07-04 13:03:34.338 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:04:05.222 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:04:05.392 +02:00 [INF] ✅ Application is running at: http://localhost:5243
+2025-07-04 13:04:05.394 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:16:24.320 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:16:24.877 +02:00 [INF] ✅ Application is running at: http://localhost:5243
+2025-07-04 13:16:24.883 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:16:27.997 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-07-04 13:23:37.528 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:23:37.822 +02:00 [INF] ✅ Application is running at: http://localhost:5243/api
+2025-07-04 13:23:37.825 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:23:37.987 +02:00 [ERR] Hosting failed to start
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-07-04 13:23:55.848 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:23:56.069 +02:00 [INF] ✅ Application is running at: http://localhost:5243/api
+2025-07-04 13:23:56.072 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:24:03.573 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-07-04 13:24:20.430 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:24:20.710 +02:00 [INF] ✅ Application is running at: http://localhost:5243/api
+2025-07-04 13:24:20.713 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:24:43.143 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:24:43.488 +02:00 [INF] ✅ Application is running at: http://localhost:5243/api1
+2025-07-04 13:24:43.493 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:25:04.161 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:25:04.566 +02:00 [INF] ✅ Application is running at: null
+2025-07-04 13:25:04.575 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:25:41.687 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:25:42.009 +02:00 [INF] ✅ Application is running at: null
+2025-07-04 13:25:42.018 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:27:34.857 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:27:35.128 +02:00 [INF] ✅ Application is running at: http://localhost:5243
+2025-07-04 13:27:35.131 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:28:13.558 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:28:13.787 +02:00 [INF] ✅ Application is running at: http://localhost:5243
+2025-07-04 13:28:13.790 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:29:12.076 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:29:12.247 +02:00 [INF] ✅ Application is running at: http://localhost:5243/api
+2025-07-04 13:29:12.250 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:29:12.373 +02:00 [ERR] Hosting failed to start
+System.InvalidOperationException: A path base can only be configured using IApplicationBuilder.UsePathBase().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.ParseAddress(String address, Boolean& https)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-07-04 13:31:57.315 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:31:57.682 +02:00 [INF] ✅ Application is running at: http://localhost:5243/api
+2025-07-04 13:31:57.685 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:32:21.794 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:32:22.111 +02:00 [INF] ✅ Application is running at: http://localhost:5243/api
+2025-07-04 13:32:22.115 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:32:56.979 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:32:57.311 +02:00 [INF] ✅ Application is running at: http://localhost:5243/
+2025-07-04 13:32:57.314 +02:00 [INF] 📡 Environment: Development
+2025-07-04 13:33:22.711 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-07-04 13:40:22.616 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:41:05.860 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:42:21.396 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:43:40.201 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:44:25.932 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:44:36.025 +02:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `FirstName` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
+    `LastName` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+    `Email` varchar(100) CHARACTER SET utf8mb4 NOT NULL,
+    `Phone` varchar(15) CHARACTER SET utf8mb4 NOT NULL,
+    `Username` varchar(20) CHARACTER SET utf8mb4 NOT NULL,
+    `Age` int NOT NULL,
+    `Password` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Gender` int NOT NULL,
+    `Status` int NOT NULL,
+    `AccountType` int NOT NULL,
+    `UserType` int NOT NULL,
+    `IsVerified` tinyint(1) NOT NULL,
+    `VerificationCode` varchar(100) CHARACTER SET utf8mb4 NULL,
+    `Preferences` longtext CHARACTER SET utf8mb4 NULL,
+    `LastLogin` datetime(6) NOT NULL,
+    `IpAddress` varchar(50) CHARACTER SET utf8mb4 NULL,
+    `LastIpAddress` varchar(50) CHARACTER SET utf8mb4 NULL,
+    `CreatedAt` datetime(6) NOT NULL,
+    `UpdatedAt` datetime(6) NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-07-04 13:45:05.485 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:56:47.499 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 13:56:47.658 +02:00 [INF] ✅ Application is running at: http://localhost:5243/
+2025-07-04 13:56:47.660 +02:00 [INF] 📡 Environment: Development
+2025-07-04 14:00:53.278 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 14:01:09.385 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 14:01:32.282 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 14:01:32.396 +02:00 [INF] ✅ Application is running at: http://localhost:5243/
+2025-07-04 14:01:32.397 +02:00 [INF] 📡 Environment: Development
+2025-07-04 14:01:59.942 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-07-04 14:03:06.356 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 14:03:06.516 +02:00 [INF] ✅ Application is running at: http://localhost:5243/
+2025-07-04 14:03:06.518 +02:00 [INF] 📡 Environment: Development
+2025-07-04 14:03:09.775 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-07-04 14:16:28.474 +02:00 [INF] 🟢 Starting up the API...
+2025-07-04 14:16:28.637 +02:00 [INF] ✅ Application is running at: http://localhost:5243/
+2025-07-04 14:16:28.639 +02:00 [INF] 📡 Environment: Development
+2025-07-04 14:16:30.831 +02:00 [WRN] Failed to determine the https port for redirect.
